@@ -12,6 +12,7 @@
     <label for = "Password">Password:</label>
     <input type = "text" id = "password" name = "password" placeholder = "Password">
     <br>
+    <br>
     <label for = "Text">Announcement Text: </label>
     <input type = "text" id = "AnnText" name = "Name" placeholder = "Announcement Text">
         <br>
@@ -46,12 +47,6 @@
                 request.open("POST", "https://discord.com/api/webhooks/1201150539719790693/OInoDJg53Nqa07bIeu169zJmqsp-gGOVDt6RP2CjPWAz-8kF68cQKUjtff25YkmyyHI8");
 
                 request.setRequestHeader('Content-type', 'application/json');
-                
-                const params = {
-                    username: "Announcement",
-                    avatar_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&",
-                    content: announcementText.value
-                }
 
                 var myEmbed = {
                     author: {
