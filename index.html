@@ -23,15 +23,15 @@
     function sendMessage() {
         var userArray = [
             {
-                username: "dummy",
-                password: "dummy",
+                username: "Dummy",
+                password: "Dummy",
             },
             {
-                username: "giggles",
+                username: "Giggles",
                 password: "giggles132",
             },
             {
-                username: "oracle",
+                username: "Oracle",
                 password: "sexyoracle",
             },
         ]
@@ -50,15 +50,19 @@
 
                 var myEmbed = {
                     author: {
-                        name: "announcement from {" + username + "}",
+                        name: username,
                         icon_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&"
                     },
 
                     title: announcementText.value,
+
+                    footer: {
+                        text: 'Announcement'
+                    }
                 }
 
                 var params = {
-                    username: "Erotic Echoes Announcement",
+                    username: "Erotic Echoes",
                     avatar_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&",
                     embeds: [ myEmbed ]
                 }
