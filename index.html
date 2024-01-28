@@ -1,7 +1,28 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement</title>
+  </head>
+  <body>
+    <button onclick="sendMessage()">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1201150539719790693/OInoDJg53Nqa07bIeu169zJmqsp-gGOVDt6RP2CjPWAz-8kF68cQKUjtff25YkmyyHI8");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Announcement",
+        avatar_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&",
+        content: "The message to send"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
 </html>
