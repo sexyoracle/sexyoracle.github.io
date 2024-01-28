@@ -8,6 +8,7 @@
   <body> 
     <label for="Text">Announcement Text:</label>
     <input type="text" id="AnnText" name="Name" placeholder="Announcement Text">
+        <br>
     <button onclick="sendMessage()">Send</button>
   </body>
 
@@ -22,9 +23,9 @@
         request.setRequestHeader('Content-type', 'application/json');
         
         const params = {
-        username: "Announcement",
-        avatar_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&",
-        content: announcementText.value
+            username: "Announcement",
+            avatar_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&",
+            content: announcementText.value
         }
 
         request.send(JSON.stringify(params));
