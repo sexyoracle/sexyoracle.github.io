@@ -15,7 +15,7 @@
     <br>
     <br>
     <label for="Text">Announcement Text: </label>
-    <textarea id="AnnText" name="Name" placeholder="Announcement Text" rows="4" cols="50"></textarea>
+    <textarea id="AnnText" name="Name" placeholder="Announcement Texts" rows="4" cols="50"></textarea>
     <br>
     <button onclick="sendMessage()">Send</button>
   </body>  
@@ -57,7 +57,7 @@
                         icon_url: "https://i.ibb.co/6Nrqbyk/HELL-S-HOTEL-removebg.png"
                     },
                     
-                    title: announcementText.value,
+                    description: announcementText.value,
 
                     footer: {
                         text: 'Announcement'
