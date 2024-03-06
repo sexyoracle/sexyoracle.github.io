@@ -14,7 +14,7 @@
     <input type="text" id="password" name="password" placeholder="Password">
     <br>
     <br>
-    <label for="Text">Announcement Texts: </label>
+    <label for="Text">Announcement Text: </label>
     <textarea id="AnnText" name="Name" placeholder="Announcement Text" rows="4" cols="50"></textarea>
     <br>
     <button onclick="sendMessage()">Send</button>
@@ -49,13 +49,15 @@
 
                 request.setRequestHeader('Content-type', 'application/json');
 
+                console.log(announcementText.value);
+
                 var myEmbed = {
                     author: {
                         name: username,
                         icon_url: "https://i.ibb.co/6Nrqbyk/HELL-S-HOTEL-removebg.png"
                     },
-
-                    title: "test",
+                    
+                    title: announcementText.value,
 
                     footer: {
                         text: 'Announcement'
@@ -65,7 +67,7 @@
                 var params = {
                     username: "Hell's Hotel",
                     avatar_url: "https://i.ibb.co/6Nrqbyk/HELL-S-HOTEL-removebg.png",
-                    content: "@everyone",
+                    content: "",
                     embeds: [ myEmbed ]
                 }
 
