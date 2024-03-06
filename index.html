@@ -14,7 +14,7 @@
     <input type="text" id="password" name="password" placeholder="Password">
     <br>
     <br>
-    <label for="Text">Announcement Texts: </label>
+    <label for="Text">Announcement Text: </label>
     <textarea id="AnnText" name="Name" placeholder="Announcement Text" rows="4" cols="50"></textarea>
     <br>
     <button onclick="sendMessage()">Send</button>
@@ -69,6 +69,7 @@
                     embeds: [ myEmbed ]
                 }
 
+                console.log(JSON.stringify(params));
                 request.send(JSON.stringify(params));
             }
         }   
