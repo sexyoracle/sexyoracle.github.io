@@ -28,8 +28,8 @@
                 password: "Dummy",
             },
             {
-                username: "bagel",
-                password: "coffee",
+                username: "Bagel",
+                password: "Coffee",
             },
             {
                 username: "Oracle",
@@ -45,14 +45,14 @@
             if(username == userArray[i].username && password == userArray[i].password){
                 // DO something
                 const request = new XMLHttpRequest();
-                request.open("POST", "https://discord.com/api/webhooks/1201150539719790693/OInoDJg53Nqa07bIeu169zJmqsp-gGOVDt6RP2CjPWAz-8kF68cQKUjtff25YkmyyHI8");
+                request.open("POST", "https://discord.com/api/webhooks/1214745791671967815/-jXiaRVPp8FOBnCrLe34Kw23DObs1Ki1RVvC9_uIkXUGEhP63eCQGOKSuDVDJc-p5iRS");
 
                 request.setRequestHeader('Content-type', 'application/json');
 
                 var myEmbed = {
                     author: {
                         name: username,
-                        icon_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&"
+                        icon_url: "https://i.ibb.co/6Nrqbyk/HELL-S-HOTEL-removebg.png"
                     },
 
                     title: announcementText.value,
@@ -64,7 +64,7 @@
 
                 var params = {
                     username: "Hell's Hotel",
-                    avatar_url: "https://cdn.discordapp.com/attachments/1009862112761356329/1200872547865075863/lips.png?ex=65c7c2b6&is=65b54db6&hm=250ac45a13369694db786e68c6b4cdbc6a53d3911cc89a7ccde9719fb123b628&",
+                    avatar_url: "https://i.ibb.co/6Nrqbyk/HELL-S-HOTEL-removebg.png",
                     content: "@everyone",
                     embeds: [ myEmbed ]
                 }
