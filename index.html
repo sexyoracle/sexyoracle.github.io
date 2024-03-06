@@ -7,18 +7,18 @@
     <title>Announcement Handler</title>
   </head>
   <body> 
-    <label for = "Username">Username:</label>
-    <input type = "text" id = "username" name = "username" placeholder = "Username">
+    <label for="Username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Username">
     <br>
-    <label for = "Password">Password:</label>
-    <input type = "text" id = "password" name = "password" placeholder = "Password">
+    <label for="Password">Password:</label>
+    <input type="text" id="password" name="password" placeholder="Password">
     <br>
     <br>
-    <label for = "Text">Announcement Texts: </label>
-    <input type = "textarea" id = "AnnText" name = "Name" placeholder = "Announcement Text">
-        <br>
+    <label for="Text">Announcement Texts: </label>
+    <textarea id="AnnText" name="Name" placeholder="Announcement Text" rows="4" cols="50"></textarea>
+    <br>
     <button onclick="sendMessage()">Send</button>
-  </body>
+  </body>  
 
   <script>
     function sendMessage() {
